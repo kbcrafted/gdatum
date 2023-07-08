@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.25)
+project(gdatum_project LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(GDATUM_VERSION_MAJOR 0)
+set(GDATUM_VERSION_MINOR 1)
+set(GDATUM_VERSION_PATCH 0)
+
+set(GDATUM_TARGET_VERSION ${GDATUM_VERSION_MAJOR}.${GDATUM_VERSION_MINOR}.${GDATUM_VERSION_PATCH})
+
+add_subdirectory(library)
+#add_subdirectory(apps)
